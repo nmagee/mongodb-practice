@@ -173,7 +173,19 @@ db.hobbies.find({equipment:"helmet"})
 ```
 1.  Upsert - adds a document when it does not exist from an `UPDATE` command
 ```
-db.hobbies.update({name:"ultimate frisbee"},{name:"ultimate frisbee",equipment:["friends","frisbee"]},{upsert: true})
+db.hobbies.updateOne(
+	{
+		name:"ultimate frisbee"
+	},
+	{	
+		"$set":{
+      name:"ultimate frisbee",
+      equipment:["friends","frisbee"]},
+    },
+  {
+    upsert: true
+  }
+)
 ```
 1.  Remove a document
 You can remove document based on any `find` parameters, such as a particular value. However, the most unique key for
