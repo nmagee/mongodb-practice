@@ -173,7 +173,7 @@ db.hobbies.find({equipment:"helmet"})
 ```
 1.  Upsert - adds a document when it does not exist from an `UPDATE` command
 ```
-db.hobbies.update(
+db.hobbies.updateOne(
 	{
 		name:"ultimate frisbee"
 	},
