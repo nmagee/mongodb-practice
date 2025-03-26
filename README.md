@@ -111,12 +111,12 @@ db.movies.insertOne({
     cast: [
         'Acty Actor',
     ],
-    title: "Example Movie",
+    title: "The Big Bad Movie",
     countries: [ 'USA' ],
     released: ISODate('1930-01-01T00:00:00.000Z'),
-    directors: [ 'Director Name' ],
+    directors: [ 'Neal Magee' ],
     lastupdated: '2024-04-09 01:12:08.943000000',
-    year: 1930,
+    year: 2025,
     imdb: { rating: 8.1, votes: 1455, id: 12999 },
     type: 'movie',
     num_mflix_comments: 0
